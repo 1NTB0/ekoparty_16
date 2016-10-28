@@ -1,0 +1,4 @@
+the bmp pic header file have been polluted so it could not open.
+
+-> convert it to some other image formate, e.g. png, so that the header can be
+rewritten & fixed, although in other format...

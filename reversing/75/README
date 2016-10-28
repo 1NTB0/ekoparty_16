@@ -1,0 +1,4 @@
+\\w{3}\\{.*\\} this means three characters from [0-9a-zA-z_] and then followed
+{.............}, as "\w" has special meaning
+
+EKO{ooOOoo_sup3r_r3g3x_challenge_OOooOO}

@@ -1,0 +1,3 @@
+use [python -c 'print "%x" * 50' > input] to dump stack
+
+then use hex to string conversion to find the secret

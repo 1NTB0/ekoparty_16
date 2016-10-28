@@ -1,0 +1,17 @@
+use wireshark and IDA decompiler
+
+find that client send
+"\xef\x9e\x8d\xd8\xcd\xfe\xba\xbe\xbf\xcf\xdd\x8b\xaf\x98\xdd\x0a\x00"
+
+get response from server "Secure password:
+rZ*_-*4vF841R!geM>)7;O3(>A<{&`K3;Tqaw&r?WAi*BQ+**3@E|lfUI#QN|{aR
+Seed: abcdefg"
+
+therefore, there must be something in the request payload that we can play
+with;
+
+=> end up using 
+[python -c 'print "\xef\x9e\x8d\xd8\xcd\xfe\xfa\xbe\xff\xff\xdd\x8b\xaf\x98\xdd\x0a\x00"' > input], 
+and use 
+[nc 4ff0eff1d46c1d74d152aaf36de6f2799020bdbc.ctf.site 50000 < input] 
+got the leakde answer
